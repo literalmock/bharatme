@@ -1,0 +1,15 @@
+{%extends "base.html"%}
+{%block content %}
+    <p>
+        {%for post in posts %}
+            {%if post['Name']=="Rohan"%}
+                <h3 style="color:red">{{post['Name']}}</h3>
+                <h3 style="color:green">{{post['Version']}}</h3>
+            {%else%}
+                <h3>{{post['Name']}}</h3>
+                <h3>{{post['Version']}}</h3>
+            {%endif%}
+        {% endfor %}
+    </p>
+
+{%endblock content %}

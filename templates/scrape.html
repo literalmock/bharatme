@@ -1,0 +1,11 @@
+<div style="border: 3px solid black; border-radius: 3px;">
+{% block content %}
+ <input id="search" type="text"><button > Search</button>
+<h3 style="color:red">{{value['title']|upper}} </h3>
+<p style="color:blue">{{value['intro']}}</p>
+{%endblock content%}
+<script>
+    search = document.getElementById('search');
+    search.addEventListener('click', (console.log(search.value)))
+</script>
+</div>
